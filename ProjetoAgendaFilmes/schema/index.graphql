@@ -1,0 +1,11 @@
+# import SerieFilme from './SerieFilme.graphql'
+
+type Query {
+    proximosLancamentos(plataformas: [String!], generos: [String!]): [SerieFilme!]!
+    continuarAssistindo(usuarioId: ID!): [SerieFilme!]!
+}
+
+type Mutation {
+    marcarComoAssistido(usuarioId: ID!, serieFilmeId: ID!): String!
+    favoritar(usuarioId: ID!, serieFilmeId: ID!): String!
+}

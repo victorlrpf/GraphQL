@@ -1,0 +1,10 @@
+type SerieFilme {
+    id: ID!
+    titulo: String!
+    tipo: String!
+    plataforma: String!
+    genero: [String!]!
+    lancamento: String!
+    status: String!
+    url: String
+}
